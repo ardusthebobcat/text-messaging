@@ -10,7 +10,7 @@ private
         :url => "https://api.twilio.com/2010-04-01/Accounts/#{ENV['TWILIO_ACCOUNT_SID']}/Messages.json",
         :user => ENV['TWILIO_ACCOUNT_SID'],
         :password => ENV['TWILIO_AUTH_TOKEN'],
-        :payload => { :Body => body,
+        :payload => { :Body => body,  #"Body", "To", "From" /need/ to be caps
                       :To => to,
                       :From => from }
       ).execute

@@ -1,0 +1,13 @@
+<%= form_for Message.new do |f| %>
+  <%= f.label :to %>
+  <%= f.text_field :to %>
+
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+
+  <!--
+    Do we need :from, because itll be sent from your twilio number not their specified number....
+  -->
+
+  <%= f.submit %>
+<% end %>
